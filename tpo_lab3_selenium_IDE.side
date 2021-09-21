@@ -1,0 +1,1027 @@
+{
+  "id": "ee9d211d-4fc6-4d92-ac7b-ae003ed4a0b1",
+  "version": "2.0",
+  "name": "tpo_lab3_selenium_IDE",
+  "url": "https://archive.org/",
+  "tests": [{
+    "id": "f56bdde0-8576-46ca-904b-ec20e5234767",
+    "name": "1_bashimSearchTest",
+    "commands": [{
+      "id": "090dc8a4-f661-43be-8cd2-d5908348694d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "235911fc-cfa5-4dc0-87ef-44fc8c1be09e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5be7c54-86cf-4528-9615-5ba336a5f12f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.roundbox20", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13426f66-84e9-487d-b205-514cc3aba0af",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.roundbox20", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "bash.im"
+    }, {
+      "id": "f17fd01a-fcf1-49fe-a330-cc1d6843bb90",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[5]/input",
+      "targets": [
+        ["css=label:nth-child(5) > input", "css:finder"],
+        ["xpath=(//input[@name='sin'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='search_options']/fieldset/label[5]/input", "xpath:idRelative"],
+        ["xpath=//label[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96ef44be-4636-4a04-895b-c813f1c3b92b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button",
+      "targets": [
+        ["css=.btn-gray", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'GO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16021bca-e316-4321-b3bd-d8c7e20fb93b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "a9ec8425-2b2f-42fe-91b9-7f9bf261638d",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/*/bash.im"
+    }, {
+      "id": "c06754dc-06fc-4e5e-8de6-b7050c68772b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[2]/a",
+      "targets": [
+        ["linkText=Collections", "linkText"],
+        ["css=.navbar-option:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Collections')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/collections/*/bash.im')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Collections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ed36d5-e8ec-4249-9612-ad98f7a5805f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "d8ca086d-33e1-4fe0-bf71-5fa206d9b3e4",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/collections/*/bash.im"
+    }, {
+      "id": "1b8691cc-8407-4483-be7c-4776f4f69732",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[3]/a",
+      "targets": [
+        ["linkText=Changes", "linkText"],
+        ["css=.beta-feature > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Changes')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/changes/bash.im')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3bdf047-7589-4170-bfe0-0ec557c624d4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "623b322c-7f80-44be-b6fa-9596f6497c54",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/changes/bash.im"
+    }, {
+      "id": "328f95c8-e13e-433c-9e4a-3169615a2a36",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[4]/a",
+      "targets": [
+        ["linkText=Summary", "linkText"],
+        ["css=.navbar-option:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Summary')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/details/bash.im')]", "xpath:href"],
+        ["xpath=//span[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Summary')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9876da97-7ff4-4677-bdeb-f6c85f97a17a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "2133a14f-68ca-4d70-9748-6512e5e4b0b3",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/details/bash.im"
+    }, {
+      "id": "e066d365-8745-45ac-b7e2-e5ec9b0a1f77",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[5]/a",
+      "targets": [
+        ["linkText=Site Map", "linkText"],
+        ["css=.navbar-option:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Site Map')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/sitemap/bash.im')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Site Map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f89355b-386e-4ec8-9ffc-9433a0418435",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "312fa91f-8dbe-4813-8e32-4a35e8dff2b9",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/sitemap/bash.im"
+    }, {
+      "id": "c0724ff6-5c39-4768-89dc-9179a4a111c3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa6ea179-d903-4a2b-944b-500117ca7e3c",
+    "name": "2_thirdCardTest",
+    "commands": [{
+      "id": "5c058413-801f-4968-9516-5bc82a47b84f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18e4f2bf-2f4d-40d4-ada3-46ce36f6db1f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2678cb6d-0c7c-41fa-8036-443a127db6fb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[6]/div[2]/div/a",
+      "targets": [
+        ["linkText=Audio Books & Poetry", "linkText"],
+        ["css=.item-ia:nth-child(6) a", "css:finder"],
+        ["xpath=//div[@id='ikind-search']/div/div[6]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/details/audio_bookspoetry')]", "xpath:href"],
+        ["xpath=//div[6]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Audio Books & Poetry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ad914b2-1e65-44ba-bd58-bedb54afaeb1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/a/span",
+      "targets": [
+        ["css=#tabby-about-finder > .tabby-text", "css:finder"],
+        ["xpath=//a[@id='tabby-about-finder']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ABOUT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ffe2726-bdb6-43c8-8186-489cfc989600",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button/div",
+      "targets": [
+        ["css=.show-more-button__text:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='tabby-about']/div/div/div[3]/div/button/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9199d97-2a14-46e5-a130-a27c67489f18",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "75877064-e49f-43a3-b335-5c30bac8396e",
+    "name": "4_dynamicLoadMainContentText",
+    "commands": [{
+      "id": "9ed84c2d-9692-4295-8dcc-74514069aa05",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eadcda40-15fd-4591-9c86-135ab7f4f4c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2082b7f-ec44-40c1-886e-ef04625d7290",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[74]/div[2]/div/a",
+      "targets": [
+        ["linkText=Public Library of India", "linkText"],
+        ["css=.item-ia:nth-child(74) a", "css:finder"],
+        ["xpath=//div[@id='ikind-search']/div/div[74]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/details/digitallibraryindia')]", "xpath:href"],
+        ["xpath=//div[74]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Public Library of India')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "945dc918-8ba8-4115-ac65-e39c3dc17a49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[166]/div[2]/div/a",
+      "targets": [
+        ["linkText=Sci-Fi / Horror", "linkText"],
+        ["css=.item-ia:nth-child(166) a", "css:finder"],
+        ["xpath=//div[@id='ikind-search']/div/div[166]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/details/SciFi_Horror')]", "xpath:href"],
+        ["xpath=//div[166]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sci-Fi / Horror')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b044027-1c87-439b-a261-a495d7d30a52",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[174]/div[2]/div/a/div[2]",
+      "targets": [
+        ["css=.item-ia:nth-child(174) a > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ikind-search']/div/div[174]/div[2]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//div[174]/div[2]/div/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f275d4f-7699-4cd0-a9ff-93e45525305e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fb8c632b-513d-428e-bf81-972e923a5334",
+    "name": "3_pikabuWebSearchTest",
+    "commands": [{
+      "id": "4187d611-0754-460e-a283-adc6ae56fb63",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03557f87-636a-4e67-a32b-ce44bb78fadc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dd235de-75cc-4cdf-8095-f1e87f826b9f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div/div/span",
+      "targets": [
+        ["css=.iconochive-web", "css:finder"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div[2]/div/center/a/div/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b64d631-f815-4cb0-9ac4-ff8094f6bb61",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/input",
+      "targets": [
+        ["id=wwmurl", "id"],
+        ["name=url", "name"],
+        ["css=#wwmurl", "css:finder"],
+        ["xpath=//input[@id='wwmurl']", "xpath:attributes"],
+        ["xpath=//form[@id='wwmform']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b9efff9-6e0a-4f68-95be-b1dd1dc78507",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.roundbox20", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "pikabu.ru"
+    }, {
+      "id": "f8bd0711-4182-4452-ba9d-50a73a673588",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/button",
+      "targets": [
+        ["css=label:nth-child(5) > input", "css:finder"],
+        ["xpath=(//input[@name='sin'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='search_options']/fieldset/label[5]/input", "xpath:idRelative"],
+        ["xpath=//label[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2114e7f7-105d-4e28-90e8-f5b6f28a8b10",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "61d82ab4-1c92-41e5-b4d2-d1209204de9d",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/*/pikabu.ru"
+    }, {
+      "id": "35a3d75d-9ea8-4c06-9848-f8ec4c0d1bf0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[2]/a",
+      "targets": [
+        ["linkText=Collections", "linkText"],
+        ["css=.navbar-option:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Collections')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/collections/*/bash.im')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Collections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadfdbd1-f129-4287-95cc-e0c59d949dd1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "4a1c13d8-38ee-4ba3-b56d-9c982dfcd5ab",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/collections/*/pikabu.ru"
+    }, {
+      "id": "1c4c26fb-e8d2-4a0f-a5e4-3e40a713fbec",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[3]/a",
+      "targets": [
+        ["linkText=Changes", "linkText"],
+        ["css=.beta-feature > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Changes')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/changes/bash.im')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Changes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12d08791-8938-478e-8428-e2c08e5a9444",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "879fea87-9c0c-4b01-a120-730dfc0a5dc2",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/changes/pikabu.ru"
+    }, {
+      "id": "b9969f85-25d4-4016-a275-e17c35f561be",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[4]/a",
+      "targets": [
+        ["linkText=Summary", "linkText"],
+        ["css=.navbar-option:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Summary')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/details/bash.im')]", "xpath:href"],
+        ["xpath=//span[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Summary')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "441ce786-84ac-4a3f-80f5-79789e36c144",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "8587aefd-4137-465f-b03c-230153418b5a",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/details/pikabu.ru"
+    }, {
+      "id": "5587119d-f678-4d73-ac1f-1cbbb81e9235",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[5]/a",
+      "targets": [
+        ["linkText=Site Map", "linkText"],
+        ["css=.navbar-option:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Site Map')]", "xpath:link"],
+        ["xpath=//div[@id='react-wayback-search']/nav/span[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/sitemap/bash.im')]", "xpath:href"],
+        ["xpath=//span[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Site Map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d8c0649-81e0-4209-8cef-af7bcbd11ded",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "be53e8fc-b6b8-4a2c-b9ae-4c1664f5ee83",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://web.archive.org/web/sitemap/pikabu.ru"
+    }, {
+      "id": "cb813827-390c-4209-ae5a-08e1b77eff18",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "447cb069-2852-471f-851c-422d97c1ff94",
+    "name": "5_textsForumTest",
+    "commands": [{
+      "id": "77cda1ad-c2c6-4bb7-a2c0-152af7da5e49",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6dd8851-5f3f-49cf-9f29-092681e2c9dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "949x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b1d90d-57de-4fdd-bdbb-8c99f5c9cf47",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/div/div/span",
+      "targets": [
+        ["css=.iconochive-texts", "css:finder"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div[2]/div/center/a[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//a[2]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "666854ff-42f3-4c9f-999c-aba917e52b23",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/a/span",
+      "targets": [
+        ["css=#tabby-forum-finder > .tabby-text", "css:finder"],
+        ["xpath=//a[@id='tabby-forum-finder']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'FORUM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ed6c82-a318-4cfa-9c6f-a8b35243ba43",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//tr[3]/td/a",
+      "targets": [
+        ["linkText=i posted contents that reveal", "linkText"],
+        ["css=.odd:nth-child(3) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'i posted contents that reveal')]", "xpath:link"],
+        ["xpath=//div[@id='tabby-forum']/div/div/table/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/post/1119923')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'i posted contents that reveal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef3088aa-f465-4187-b849-3cb12f107b11",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8be94982-02f1-4ca3-85a4-dc65ee2ee702",
+    "name": "6_videoSmesharikiFiftySecondsTest",
+    "commands": [{
+      "id": "9360ce00-ac45-427e-92d1-5de0496d876b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e0bd6b9-dab7-4fb0-b908-685c85d67087",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52bdd400-3b7a-4319-af2f-d85fd68acccb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[3]/div/div/span",
+      "targets": [
+        ["css=.iconochive-movies", "css:finder"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div[2]/div/center/a[3]/div/div/span", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83793764-1c06-4da7-adc9-ad36b7577ddb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "смешарики балласт"
+    }, {
+      "id": "3e605e1e-6271-418f-b253-bde3efe7b33b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "смешарики балласт"
+    }, {
+      "id": "7975e47f-9394-4961-a4ba-a35c3c149ec9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ae2f74f2-f708-4a0e-8833-6844d4ba5410",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div[2]",
+      "targets": [
+        ["css=.item-ia:nth-child(2) .ttl", "css:finder"],
+        ["xpath=//div[@id='ikind--week']/div/div[2]/div[2]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5ac4b2-5ad9-41f5-b371-d7eb412b0e25",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd89bf60-9bc5-49c2-83d0-64f74ac5c120",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[12]/div/div/div/div[2]/div",
+      "targets": [
+        ["css=.jw-icon-display", "css:finder"],
+        ["xpath=//div[@id='jw6']/div[2]/div[12]/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34059714-9230-4800-a286-a7b9254cde25",
+      "comment": "",
+      "command": "pause",
+      "target": "50000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa64c3c9-b23c-4bf3-92d1-843f53746160",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "497790bf-7eeb-4cc6-9d0f-720e25eb77a2",
+    "name": "7_audioBarbarikiTest",
+    "commands": [{
+      "id": "0a5e2914-12f1-423e-ae30-b40bb8e42244",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "512ae1fd-9117-45c0-bc02-61ac1bf180e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b7b927a-fdf1-47de-beba-715c989fdb53",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[4]/div/div/span",
+      "targets": [
+        ["css=.iconochive-audio", "css:finder"],
+        ["xpath=//main[@id='maincontent']/div[2]/div[2]/div[2]/div/center/a[4]/div/div/span", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26629b10-c642-4ea6-80a1-db68c01883c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa2b79f2-4404-4f9f-848f-f10c5de09873",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Барбарики PHONK REMIX"
+    }, {
+      "id": "0d091550-6358-4f94-be18-044f3850f938",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//form/input",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-sm", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='tabby-collection']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d4d35d8e-368d-4fbb-b2ca-7e4d73c07b6c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div[2]",
+      "targets": [
+        ["css=.ttl", "css:finder"],
+        ["xpath=//div[@id='ikind--week']/div/div[2]/div[2]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c79b92ba-853b-4898-81eb-91a9de3a333f",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5040561d-2c95-41af-99b8-3081d3d2b8e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='jw6']/div[2]/div[12]/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c214e0c8-87b1-453c-b3e7-84f3ac64f184",
+      "comment": "",
+      "command": "pause",
+      "target": "22000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60751b8a-ba5b-46e0-9482-95e2e3111acb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2692b5d5-90cc-4c29-80a6-daed38777a5c",
+    "name": "8_advancedSearchTest",
+    "commands": [{
+      "id": "b9be049c-e8df-4bec-8b8b-632af2d25a99",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96190765-7c1a-4483-a605-5b734a7681ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ce9880a-03fd-4b13-b2d3-5dba888965e5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='search_options']/a",
+      "targets": [
+        ["linkText=Advanced Search", "linkText"],
+        ["css=.search-options__advanced-search-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Advanced Search')]", "xpath:link"],
+        ["xpath=//a[@onclick='return AJS.advanced_search(this)']", "xpath:attributes"],
+        ["xpath=//div[@id='search_options']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://archive.org/advancedsearch.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Advanced Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c0bc6ec-b0f3-463a-ba02-7316eb5786bf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='searchForm']/div/div[4]/input",
+      "targets": [
+        ["name=any_field", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='any_field']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "NEON"
+    }, {
+      "id": "841e766d-4293-43eb-adb5-528daa41d7f6",
+      "comment": "",
+      "command": "select",
+      "target": "name=title_type",
+      "targets": [],
+      "value": "label=does not contain"
+    }, {
+      "id": "996139ff-2f3d-4794-8f5d-efeece668666",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='searchForm']/div[2]/div[4]/input",
+      "targets": [
+        ["name=title_query", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='title_query']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/input", "xpath:position"]
+      ],
+      "value": "anime"
+    }, {
+      "id": "ff8d92cc-2782-4492-9e77-8e588706c8c3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='searchForm']/div[3]/div[4]/input",
+      "targets": [
+        ["name=creator_query", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='creator_query']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/div[3]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/input", "xpath:position"]
+      ],
+      "value": "ADV Films"
+    }, {
+      "id": "3b654b30-2184-484a-847f-16a1341e36c7",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_from_year",
+      "targets": [],
+      "value": "label=1999"
+    }, {
+      "id": "a704aebf-729f-4bf1-88b6-efc66a331f3d",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_from_month",
+      "targets": [],
+      "value": "label=01"
+    }, {
+      "id": "766f94c1-5ca3-4841-a1ac-664c43f9ca18",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_from_day",
+      "targets": [],
+      "value": "label=01"
+    }, {
+      "id": "c7d64b89-982a-4c58-bcbe-7d3d96a21183",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_to_year",
+      "targets": [],
+      "value": "label=1999"
+    }, {
+      "id": "8d70e4ef-e6eb-42a1-a630-ad09cd94f417",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_to_month",
+      "targets": [],
+      "value": "label=12"
+    }, {
+      "id": "1ee65277-64e1-4734-bf0d-f0efb921a1d8",
+      "comment": "",
+      "command": "select",
+      "target": "name=date_to_day",
+      "targets": [],
+      "value": "label=31"
+    }, {
+      "id": "081ab07d-a422-42df-a732-ef5a82fc68d9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='searchForm']/center/input[2]",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/center/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "374c69c2-de98-4241-bcb4-dc0eb8800934",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div[2]",
+      "targets": [
+        ["css=.ttl", "css:finder"],
+        ["xpath=//div[@id='ikind-search']/div/div[2]/div[2]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db8bc0c3-f6ee-48bc-940f-e1449e680656",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='theatre-ia']/div/div",
+      "targets": [
+        ["css=.xs-col-12", "css:finder"],
+        ["xpath=//div[@id='theatre-ia']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "440b4888-4c25-4d60-bad9-50231b3eebcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-display",
+      "targets": [
+        ["css=.jw-icon-display", "css:finder"],
+        ["xpath=//div[@id='jw6']/div[2]/div[12]/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[12]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e88b05c-b3a8-4810-b6d5-183f3ae2c184",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "1ae06139-8c08-4d22-aff2-97d678f1da0f",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "https://archive.org/details/neon-genesis-evangelion-dvd"
+    }, {
+      "id": "566ffa0a-d47f-4786-8383-37edde476029",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "81a66e12-1e2e-4405-a281-e879047487b2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://archive.org/", "https://archive.org/search.php?query=%28NEON%29%20AND%20-title%3A%28anime%29%20AND%20creator%3A%28ADV%20Films%29%20AND%20date%3A%5B1999-01-01%20TO%202000-01-01%5D", "https://archive.org/details/neon-genesis-evangelion-dvd"],
+  "plugins": []
+}
